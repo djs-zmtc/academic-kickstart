@@ -29,15 +29,40 @@
   weight = 55
 
 [[main]]
+  name = "Info"
+  identifier = "info"
+  weight = 60
+
+[[main]]
   name = "About"
   url = "#about"
-  identifier = "about"
-  weight = 58
+  weight = 1
+  parent = "info"
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 60
+  weight = 5
+  parent = "info"
+
+[[main]]
+  name = "FAQ"
+  url = "/faq/"
+  weight = 7
+  parent = "info"
+
+[[main]]
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 10
+  parent = "info"
+
+[[main]]
+  name = "Terms & Conditions"
+  url = "/terms/"
+  weight = 15
+  parent = "info"
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
