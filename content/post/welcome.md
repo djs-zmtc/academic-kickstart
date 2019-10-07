@@ -13,5 +13,5 @@ aliases:
 tags: ["intro","welcome"]
 ---
 
-Welcome to the ZMT Creative blog and information site. The goal of this site is to provide a publishing medium for a wide range of topics, including opinions, history, technology, writing, photography, music --- just about anything that I feel like writing about.
+Welcome to the ZMT Creative blog and information site. The goal of this site is to provide a publishing medium for a wide range of topics, including opinions, history, technology, writing, photography, music --- just about anything that our authors feel like writing about. We will also be providing media for download, including images, clip art and audio.
  

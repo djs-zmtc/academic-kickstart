@@ -5,7 +5,7 @@ lastmod: 2019-10-02T18:09:47-04:00
 description: "A supplement to the information provided on the Hugo site for deploying your site using rsync."
 authors: ["djsweeney"]
 type: "post"
-toc: true
+##  toc: true
 aliases: 
     - /2019/09/using-rsync-to-deploy-hugo/
     - /2019/10/using-rsync-to-deploy-hugo/
@@ -22,6 +22,8 @@ The [Hugo][Hugo] website provides a good guide for setting up&nbsp;`ssh` and &nb
 > The alternative is to set up explicit **exclusions** (e.g. a list of files and directories on the server I want to keep) and let `rsync` remove everything else that isn't in the hugo-generated `public/` folder. 
 > 
 > **WARNING:** This new script is more dangerous if you get the exclusion list wrong, **so make sure you have a good backup of the non-hugo-generated files and directories on the server <span style="color: red;">before</span> you run this new script!**
+
+{{< toc >}}
 
 ## Assumptions
 
