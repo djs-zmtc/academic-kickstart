@@ -6,11 +6,13 @@
 [[main]]
   name = "Home"
   url = "#"
+  pre = "<i class='fas fa-home'></i>&nbsp;"
   weight = 10
 
 [[main]]
   name = "Posts"
   url = "#posts"
+  pre = "<i class='far fa-newspaper'></i>&nbsp;"
   weight = 20
 
 # [[main]]
@@ -26,11 +28,13 @@
 [[main]]
   name = "Topics"
   url = "#tags"
+  pre = "<i class='fas fa-tags'></i>&nbsp;"
   weight = 55
 
 [[main]]
   name = "Info"
   identifier = "info"
+  pre = "<i class='fas fa-info-circle'></i>&nbsp;"
   weight = 60
 
 [[main]]
