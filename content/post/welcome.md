@@ -8,6 +8,8 @@ type: "post"
 slug: "welcome-to-zmtcreative"
 aliases:
     - /2019/09/welcome-to-zmt-creative/
+    - /posts/welcome-to-zmt-creative/
+    - /posts/welcome-to-zmtcreative/
 tags: ["intro","welcome"]
 ---
 
