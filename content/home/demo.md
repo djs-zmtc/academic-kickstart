@@ -5,10 +5,10 @@
 
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 15  # Order that this section will appear.
 
-title = "Academic Kickstart"
+title = "Welcome to ZMT Creative"
 subtitle = ""
 
 [design]
@@ -25,8 +25,8 @@ subtitle = ""
   # color = "navy"
   
   # Background gradient.
-  gradient_start = "DarkGreen"
-  gradient_end = "ForestGreen"
+  gradient_start = "#077448"
+  gradient_end = "#08ad92"
   
   # Background image.
   # image = "image.jpg"  # Name of image in `static/img/`.
@@ -37,7 +37,7 @@ subtitle = ""
 
 [design.spacing]
   # Customize the section spacing. Order is top, right, bottom, left.
-  padding = ["20px", "0", "20px", "0"]
+  padding = ["5px", "0", "10px", "0"]
 
 [advanced]
  # Custom CSS. 
@@ -47,7 +47,7 @@ subtitle = ""
  css_class = ""
 +++
 
-Welcome to the **Academic Kickstart** template!
+<!-- Welcome to the **Academic Kickstart** template!
 
 Follow our [Getting Started](https://sourcethemes.com/academic/docs/get-started/) and [Page Builder](https://sourcethemes.com/academic/docs/widgets/) guides to easily personalize the template and then [add your own content](https://sourcethemes.com/academic/docs/managing-content/).
 
@@ -69,4 +69,4 @@ This homepage section is an example of adding [elements](https://sourcethemes.co
 Backgrounds can be applied to any section. Here, the *background* option is set give a *color gradient*.
 
 **To remove this section, delete `content/home/demo.md`.**
-{{% /alert %}}
+{{% /alert %}} -->
