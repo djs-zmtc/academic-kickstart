@@ -10,11 +10,11 @@ authors:
 superuser: false
 
 # Role/position
-role: "Writer/Editor"
+role: "Owner & Founder"
 
 # Organizations/Affiliations
 organizations:
-- name: "ZMT Creative"
+- name: "ZMT Creative LLC"
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -74,4 +74,4 @@ email: ""
 user_groups: ["Authors"]
 ---
 
-[Bio here...]
+DJ has spent almost 30 years working in the IT industry, primarily in Technical Support and Systems/Network Administration of Microsoft Windows and Linux systems. He also enjoys writing, editing and graphic design work.
