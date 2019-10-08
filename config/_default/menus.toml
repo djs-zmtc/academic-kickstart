@@ -10,10 +10,22 @@
   weight = 10
 
 [[main]]
-  name = "Posts"
+  name = "Recent Posts"
   url = "#posts"
   pre = "<i class='far fa-newspaper'></i>&nbsp;"
   weight = 20
+
+# [[main]]
+#   name = ""
+#   identifier = "postpage"
+#   url = ""
+#   weight = 25
+
+# [[main]]
+#   name = "All Posts"
+#   url = "/post/"
+#   parent = "postpage"
+#   weight = 1
 
 # [[main]]
 #   name = "Projects"
