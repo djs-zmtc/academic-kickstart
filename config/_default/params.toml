@@ -175,6 +175,9 @@ link_authors = true
 plugins_css = ["custom"]
 plugins_js  = ["custom"]
 
+# Summary variables
+summary_truncate = 500
+
 # Configuration of publication pages.
 [publications]
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )

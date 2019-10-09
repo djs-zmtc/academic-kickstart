@@ -41,7 +41,7 @@
 
     {{ with $summary }}
     <div class="article-style">
-      {{ . | truncate 135 }}
+      {{ . | truncate (default 135 site.Params.summary_truncate) }}
     </div>
     {{ end }}
 
