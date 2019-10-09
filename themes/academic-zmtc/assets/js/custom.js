@@ -13,6 +13,30 @@ $(window).scroll(function() {
     return false;
   });
 
+  $.fn.exists = function(callback) {
+    var args = [].slice.call(arguments, 1);
+    if (this.length) {
+      callback.call(this, args);
+    }
+    return this;
+  }
+
+  window.onload = function() {
+    var group, i, tocexp, toccol;
+    group = document.querySelectorAll('#TableOfContents ul ul');
+    tocexp = document.querySelector('#toc-expand');
+    toccol = document.querySelector('#toc-collapse');
+    for (i = 0; i < group.length; ++i) {
+      tocexp.style.display = 'inline';
+    }
+  }
+    // $('#TableOfContents ul ul').exists(function() {
+    //   tocexp = document.querySelector('#toc-expand');
+    //   toccol = document.querySelector('#toc-collapse');
+    //   tocexp.style.display = 'inline';
+    //   toccol.style.display = 'none';
+    // });
+  
   $('#toc-expand').click(function() {
     // var newstyle = document.createElement('style');
     var group, i, tocexp, toccol;
