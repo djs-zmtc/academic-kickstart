@@ -33,7 +33,7 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
       <description>
-      {{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" (replaceRE "<div id=\"toc\">(.|\n)+?</div>" "" .Content) 1) "") | truncate (default 500 .Site.Params.summary_length) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+      {{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" (replaceRE "<div id=\"toc\">(.|\n)+?</div>" "" .Content) 1) "") | truncate (default 500 site.Params.summary_truncate) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
       {{- if .Params.Summary }}
         {{ printf "%s%s%s" "<p>" .Params.Summary "</p>" | html }}
       {{ else if .Params.Description }}
