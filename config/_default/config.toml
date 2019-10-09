@@ -72,3 +72,6 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 [permalinks]
   # post = "/:sections/:slug"
+
+[services.rss]
+  rss = 30
