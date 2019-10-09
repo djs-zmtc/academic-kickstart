@@ -27,11 +27,14 @@ enableGitInfo = true
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
-hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
+# Set `true` for Chinese/Japanese/Korean languages.
+hasCJKLanguage = false
 defaultContentLanguageInSubdir = false
-removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
+# Workaround for https://github.com/gohugoio/hugo/issues/5687
+removePathAccents = true
 
-paginate = 10  # Number of items per page in paginated lists.
+# Number of items per page in paginated lists.
+paginate = 10
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -50,7 +53,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 # Configure BlackFriday Markdown rendering.
 #   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
 [blackfriday]
-  hrefTargetBlank = true  # `true` opens external links in a new tab. See https://github.com/gohugoio/hugo/issues/2424
+  # `true` opens external links in a new tab. See https://github.com/gohugoio/hugo/issues/2424
+  hrefTargetBlank = true
 	angledQuotes = false
 	latexDashes = true
   extensions = ["backslashLineBreak"]
@@ -58,7 +62,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 [imaging]
   resampleFilter = "lanczos"
   quality = 90
-  anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
+  # Anchor for cropping. Options include Smart and Center.
+  anchor = "smart"
 
 # Taxonomies.
 [taxonomies]
@@ -70,8 +75,5 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 [frontmatter]
   lastmod = ["lastmod", ":git", "date", "publishDate"]
 
-[permalinks]
-  # post = "/:sections/:slug"
-
 [services.rss]
-  rss = 30
+  limit = 30

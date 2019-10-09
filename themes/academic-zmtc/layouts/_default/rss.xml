@@ -3,6 +3,7 @@
 {{- $page_context := cond .IsHome site . -}}
 {{- $pages := where $page_context.RegularPages.ByDate "Type" "post" -}}
 {{- $limit := site.Config.Services.RSS.Limit -}}
+{{- $ttl_minutes := site.Params.Services.RSS.ttl_minutes -}}
 {{- if ge $limit 1 -}}
   {{- $pages = $pages | first $limit -}}
 {{- end -}}
@@ -19,6 +20,7 @@
     {{- with site.LanguageCode }}<language>{{.}}</language>{{end -}}
     {{- with site.Copyright }}<copyright>{{ replace (replace . "{year}" now.Year) "&copy;" "©" | plainify }}</copyright>{{end -}}
     {{- if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end -}}
+    <ttl>{{ $ttl_minutes | default 1440 }}</ttl>
     {{- if .Scratch.Get "og_image" }}
     <image>
       <url>{{ .Scratch.Get "og_image" }}</url>
@@ -33,13 +35,17 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
       <description>
-      {{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" (replaceRE "<div id=\"toc\">(.|\n)+?</div>" "" .Content) 1) "") | truncate (default 500 site.Params.summary_truncate) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
-      {{- if .Params.Summary }}
-        {{ printf "%s%s%s" "<p>" .Params.Summary "</p>" | html }}
-      {{ else if .Params.Description }}
-        {{ printf "%s%s%s" "<p>" .Params.Description "</p>" | html }}
-      {{ end -}}
-      {{ $.Scratch.Get "summary" | html }}
+      {{- if site.Params.Services.RSS.ShowFullContent }}
+        {{ .Content | replaceRE "<div id=\"toc\">(.|\n)+?</div>" "" | html }}
+      {{ else }}
+        {{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" (replaceRE "<div id=\"toc\">(.|\n)+?</div>" "" .Content) 1) "") | truncate (default 500 site.Params.summary_truncate) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+        {{- if .Params.Summary }}
+          {{ printf "%s%s%s" "<p>" .Params.Summary "</p>" | html }}
+        {{ else if .Params.Description }}
+          {{ printf "%s%s%s" "<p>" .Params.Description "</p>" | html }}
+        {{ end -}}
+        {{ $.Scratch.Get "summary" | html }}
+      {{ end }}
       </description>
     </item>
     {{ end }}
