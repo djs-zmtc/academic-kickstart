@@ -5,10 +5,10 @@ summary:
 date: 2019-10-01T01:15:12-04:00
 lastmod: 2019-10-01T01:15:12-04:00
 draft: false  # Is this a draft? true/false
-#  toc: true  # Show table of contents? true/false
-toctitle: Questions
+share: false
+commentable: false
+editable: false
 type: page  # Do not modify.
-authors: ["admin"]
 
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
