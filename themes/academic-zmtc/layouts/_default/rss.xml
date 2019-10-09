@@ -1,7 +1,7 @@
-{{- /* Generate RSS v2 with full page content. */ -}}
+{{- /* Generate RSS v2 with summary page content. */ -}}
 {{- /* Upstream Hugo bug - RSS dates can be in future: https://github.com/gohugoio/hugo/issues/3918 */ -}}
 {{- $page_context := cond .IsHome site . -}}
-{{- $pages := where $page_context.RegularPages "Type" "post" -}}
+{{- $pages := where $page_context.RegularPages.ByDate "Type" "post" -}}
 {{- $limit := site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
   {{- $pages = $pages | first $limit -}}
@@ -15,7 +15,7 @@
       {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{ end -}}
     <description>{{ .Title | default site.Title }}</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <generator>Hugo (https://gohugo.io/) - Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     {{- with site.LanguageCode }}<language>{{.}}</language>{{end -}}
     {{- with site.Copyright }}<copyright>{{ replace (replace . "{year}" now.Year) "&copy;" "©" | plainify }}</copyright>{{end -}}
     {{- if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end -}}
@@ -32,7 +32,15 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Content | html }}</description>
+      <description>
+      {{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" (replaceRE "<div id=\"toc\">(.|\n)+?</div>" "" .Content) 1) "") | truncate (default 500 .Site.Params.summary_length) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+      {{- if .Params.Summary }}
+        {{ printf "%s%s%s" "<p>" .Params.Summary "</p>" | html }}
+      {{ else if .Params.Description }}
+        {{ printf "%s%s%s" "<p>" .Params.Description "</p>" | html }}
+      {{ end -}}
+      {{ $.Scratch.Get "summary" | html }}
+      </description>
     </item>
     {{ end }}
   </channel>
