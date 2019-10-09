@@ -1,17 +1,15 @@
 ---
 title: "Switching Hyper-V On and Off Using Boot Options"
-description: A method to switch Hyper-V Services on and off by setting up multiple boot options and a script to select them, allowing other hypervisors (e.g. Virtualbox) to run with a simple reboot.
+summary: "A method to switch Hyper-V Services on and off by setting up multiple boot options and a script to select them, allowing other hypervisors (e.g. Virtualbox) to run with a simple reboot."
 type: "post"
 date: 2019-09-26T09:32:15-04:00
 lastmod: 2019-10-01T09:32:15-04:00
 draft: false
-#  toc: true
 authors: ["djsweeney"]
 aliases: 
     - /2019/09/switching-hyper-v-on-and-off-using-boot-options/
     - /posts/tech/switching-hyper-v-on-and-off-using-boot-options/
-topics: ["virtualization"]
-tags: ["windows 10","hyper-v","virtualbox","hypervisors","development"]
+tags: ["windows 10","hyper-v","virtualbox","virtualization","vmware","hypervisors","development"]
 ---
 
 This document provides instructions for setting up your Windows 10 environment to allow easy switching between hypervisors **without** needing to install/uninstall Hyper-V support. You will still need to reboot to make the switch, but a reboot is **all** you'll need to do since we won't be adding/removing any software.

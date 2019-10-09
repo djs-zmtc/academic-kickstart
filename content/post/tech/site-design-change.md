@@ -3,7 +3,7 @@
 
 title: "Site Design Change"
 subtitle: ""
-summary: ""
+summary: "Announcement of changes to the site design."
 authors: ["djsweeney"]
 tags: ["static web", "development","hugo"]
 categories: []

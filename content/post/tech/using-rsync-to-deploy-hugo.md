@@ -2,15 +2,13 @@
 title: "Using Rsync to Deploy Hugo"
 date: 2019-10-01T15:59:47-04:00
 lastmod: 2019-10-02T18:09:47-04:00
-description: "A supplement to the information provided on the Hugo site for deploying your site using rsync."
+summary: "A supplement to the information provided on the Hugo site for deploying your site using rsync."
 authors: ["djsweeney"]
 type: "post"
-##  toc: true
 aliases: 
     - /2019/09/using-rsync-to-deploy-hugo/
     - /2019/10/using-rsync-to-deploy-hugo/
     - /posts/tech/using-rsync-to-deploy-hugo/
-topics: ["development"]
 tags: ["hugo", "development", "static web"]
 draft: false
 ---
