@@ -15,7 +15,7 @@
         {{ if .p1.IsHome }}
             Home
         {{ else }}
-            {{ .p1.Title }}
+            {{ .p1.Params.Breadcrumb | default .p1.Title }}
         {{ end }}
         </a>&nbsp;/&nbsp;
     {{ end }}
