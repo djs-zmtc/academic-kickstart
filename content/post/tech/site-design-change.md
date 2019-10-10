@@ -5,8 +5,8 @@ title: "Site Design Change"
 subtitle: ""
 summary: "Announcement of changes to the site design."
 authors: ["djsweeney"]
+categories: ["Technology"]
 tags: ["static web", "development","hugo"]
-categories: []
 date: 2019-10-07T15:51:59-04:00
 lastmod: 2019-10-07T15:51:59-04:00
 featured: false
