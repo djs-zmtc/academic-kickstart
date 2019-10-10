@@ -8,6 +8,8 @@ editable: false
 type: page
 aliases: 
   - /privacy/
+categories: ["Info"]
+categories_weight: 99
 
 # Optional header image (relative to `static/img/` folder).
 header:

@@ -8,6 +8,8 @@ editable: false
 type: page
 aliases:
   - /terms/
+categories: ["Info"]
+categories_weight: 98
 
 # Optional header image (relative to `static/img/` folder).
 header:
