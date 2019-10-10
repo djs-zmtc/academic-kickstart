@@ -9,6 +9,7 @@ authors: ["djsweeney"]
 aliases: 
     - /2019/09/switching-hyper-v-on-and-off-using-boot-options/
     - /posts/tech/switching-hyper-v-on-and-off-using-boot-options/
+categories: ["Technology"]
 tags: ["windows 10","hyper-v","virtualbox","virtualization","vmware","hypervisors","development"]
 ---
 
@@ -171,7 +172,7 @@ Assuming you have successfully followed the instructions in this document, the f
 
 > You **must** run this script as an administrator.
 
-**Download** [reboot-hyperv.zip](reboot-hyperv.zip) and unzip into a folder in your path.
+**Download** [reboot-hyperv.zip](/downloads/reboot-hyperv.zip) and unzip into a folder in your path.
 
 ### Usage
 
