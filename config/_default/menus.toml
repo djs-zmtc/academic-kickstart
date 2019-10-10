@@ -10,7 +10,7 @@
   weight = 10
 
 [[main]]
-  name = "Recent Posts"
+  name = "Recent<br>Posts"
   url = "#posts"
   pre = "<i class='far fa-newspaper'></i>&nbsp;"
   weight = 20
@@ -38,7 +38,13 @@
 #   weight = 40
 
 [[main]]
-  name = "Topics"
+  name = "Popular<br>Categories"
+  url = "#categories"
+  pre = "<i class='fas fa-folder'></i>&nbsp;"
+  weight = 54
+
+[[main]]
+  name = "Popular<br>Tags"
   url = "#tags"
   pre = "<i class='fas fa-tags'></i>&nbsp;"
   weight = 55
@@ -46,7 +52,7 @@
 [[main]]
   name = "Info"
   identifier = "info"
-  pre = "<i class='fas fa-info-circle'></i>&nbsp;"
+  pre = "<i class='fas fa-info-circle'></i>&nbsp;&nbsp;"
   weight = 60
 
 [[main]]
