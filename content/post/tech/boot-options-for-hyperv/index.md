@@ -171,7 +171,7 @@ Assuming you have successfully followed the instructions in this document, the f
 
 > You **must** run this script as an administrator.
 
-**Download** [reboot-hyperv.zip](/downloads/reboot-hyperv.zip) and unzip into a folder in your path.
+**Download** [reboot-hyperv.zip](reboot-hyperv.zip) and unzip into a folder in your path.
 
 ### Usage
 
