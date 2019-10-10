@@ -6,6 +6,8 @@ share: false
 commentable: false
 editable: false
 type: page
+aliases:
+  - /terms/
 
 # Optional header image (relative to `static/img/` folder).
 header:

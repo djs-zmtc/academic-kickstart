@@ -69,13 +69,13 @@
 
 [[main]]
   name = "Privacy Policy"
-  url = "/privacy/"
+  url = "/privacy-policy/"
   weight = 10
   parent = "info"
 
 [[main]]
   name = "Terms & Conditions"
-  url = "/terms/"
+  url = "/terms-and-conditions/"
   weight = 15
   parent = "info"
 
