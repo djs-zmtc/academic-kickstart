@@ -1,4 +1,4 @@
-/* Custom CSS */
+// Override this file to add your own SCSS styling.
 
 .home-section {
     padding: 50px 0;
@@ -38,16 +38,16 @@ a.back-to-toc:hover i {
     text-decoration: underline;
 }
 
-.navbar-light .navbar-nav>.nav-item>.nav-link>i,
-.navbar-light .navbar-nav>.nav-item>.nav-link:focus>i, 
-.navbar-light .navbar-nav>.nav-item>.nav-link:hover>i {
+.navbar-light .navbar-nav > .nav-item > .nav-link > i,
+.navbar-light .navbar-nav > .nav-item > .nav-link:focus > i, 
+.navbar-light .navbar-nav > .nav-item > .nav-link:hover > i {
     vertical-align: middle;
     padding-top: 0.1rem;
     font-size: 0.9rem;
 }
-.navbar-light .navbar-nav>.nav-item>.nav-link>span,
-.navbar-light .navbar-nav>.nav-item>.nav-link:focus>span, 
-.navbar-light .navbar-nav>.nav-item>.nav-link:hover>span {
+.navbar-light .navbar-nav > .nav-item > .nav-link > span,
+.navbar-light .navbar-nav > .nav-item > .nav-link:focus > span, 
+.navbar-light .navbar-nav > .nav-item > .nav-link:hover > span {
     display: inline-block;
     vertical-align: middle;
     line-height: 0.8rem;
@@ -143,6 +143,15 @@ div.media.stream-item > div.media-body > h3.nometa::before {
 div.universal-wrapper.pt-3 h1 {
     border-bottom: solid 3px rgba(0,0,0,1);
 }
+
+.zmt-gallery.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.zmt-gallery.gallery > a[data-fancybox] > img {
+    height: 200px;
+}
+
 
 @media (min-width: 992px) {
     nav#navbar-main li.nav-item {
