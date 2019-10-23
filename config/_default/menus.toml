@@ -15,6 +15,12 @@
   pre = "<i class='far fa-newspaper'></i>&nbsp;"
   weight = 20
 
+[[main]]
+  name = "Image<br>Gallery"
+  url = "/gallery/"
+  pre = "<i class='fas fa-images'></i>&nbsp;"
+  weight = 30
+
 # [[main]]
 #   name = ""
 #   identifier = "postpage"
