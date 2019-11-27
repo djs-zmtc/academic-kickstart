@@ -1,4 +1,23 @@
 // Override this file to add your own SCSS styling.
+ul.share {
+    justify-content: left;
+}
+
+.zmt-btn {
+    padding: 0.125rem 0.25rem;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: lightgray;
+    font-weight: bold;
+}
+.zmt-btn a {
+    text-decoration: none;
+}
+.zmt-btn:focus,
+.zmt-btn:hover {
+    background-color: rgba(0,127,0,0.1);
+    box-shadow: 3px 3px 5px gray;
+}
 
 .home-section {
     padding: 50px 0;
