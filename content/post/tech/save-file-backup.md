@@ -54,6 +54,8 @@ You can download an installer that will install the script files and set up the 
 
 **Download:**  [ZMTC-SaveFileBackup_Installer](/downloads/ZMTC-SaveFileBackup-20.02.1_Installer.exe)
 
+> **NOTE:** The installer is **not** signed, so Windows might warn you that this is an untrusted file or something similar. The installer was created using Inno Setup and should be safe to run.
+
 The remaining sections below list the scripts and the instructions for manually setting up the `Send to` context menu.
 
 ## The Scripts
