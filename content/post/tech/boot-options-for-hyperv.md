@@ -10,7 +10,7 @@ aliases:
     - /2019/09/switching-hyper-v-on-and-off-using-boot-options/
     - /posts/tech/switching-hyper-v-on-and-off-using-boot-options/
 categories: ["Technology"]
-tags: ["windows 10","hyper-v","virtualbox","virtualization","vmware","hypervisors","development"]
+tags: ["windows 10","hyper-v","virtualbox","virtualization","vmware","hypervisors","development","powershell","scripts"]
 ---
 
 This document provides instructions for setting up your Windows 10 environment to allow easy switching between hypervisors **without** needing to install/uninstall Hyper-V support. You will still need to reboot to make the switch, but a reboot is **all** you'll need to do since we won't be adding/removing any software.

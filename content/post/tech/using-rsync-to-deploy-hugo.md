@@ -10,7 +10,7 @@ aliases:
     - /2019/10/using-rsync-to-deploy-hugo/
     - /posts/tech/using-rsync-to-deploy-hugo/
 categories: ["Technology"]
-tags: ["hugo", "development", "static web"]
+tags: ["hugo", "development", "static web","scripts","bash"]
 draft: false
 ---
 
