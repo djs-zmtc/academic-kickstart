@@ -3,12 +3,13 @@ ul.share {
     justify-content: left;
 }
 
-.zmt-btn {
-    padding: 0.125rem 0.25rem;
+.zmt-btn, .zmt-kbd {
+    padding: 0.1rem 0.2rem;
     border: solid 1px;
     border-radius: 5px;
     background-color: lightgray;
     font-weight: bold;
+    font-size: 85%;
 }
 .zmt-btn a {
     text-decoration: none;
