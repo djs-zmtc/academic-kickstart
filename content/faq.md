@@ -11,6 +11,7 @@ editable: false
 type: page  # Do not modify.
 categories: ["Info"]
 categories_weight: 10
+robotsdisallow: true
 
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.

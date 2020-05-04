@@ -10,6 +10,7 @@ aliases:
   - /terms/
 categories: ["Info"]
 categories_weight: 98
+robotsdisallow: true
 
 # Optional header image (relative to `static/img/` folder).
 header:

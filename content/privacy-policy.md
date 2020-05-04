@@ -10,6 +10,7 @@ aliases:
   - /privacy/
 categories: ["Info"]
 categories_weight: 99
+robotsdisallow: true
 
 # Optional header image (relative to `static/img/` folder).
 header:
