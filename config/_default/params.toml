@@ -46,9 +46,12 @@ org_name = "ZMT Creative LLC"
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 description = ""
 
-# Display a logo in navigation bar rather than title (optional).
+# Main menu alignment (l = left, c = center, r = right) and logo options.
+main_menu = {align = "l", show_logo = true}
+
+# DEPRICATED: Display a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-logo = "logo-wide.png"
+# logo = "logo-wide.png"
 
 ############################
 ## Site Features
