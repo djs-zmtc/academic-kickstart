@@ -70,10 +70,10 @@ If you are **not** routinely adding other web applications offered by your hosti
 
 ```bash
 #!/bin/bash
-USER=zmtcxqqm
-HOST=zmtcreative.net
+USER=hosting-username
+HOST=example.com
 DIR=\~/public_html   # might sometimes be empty!
-PORT=21098
+PORT=22
 
 ### LIST OF FILES/DIRECTORIES TO EXCL #######################################
 # create a bash array containing the files and directories on the server
