@@ -41,6 +41,8 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 summaryLength = 500
 
+enableRobotsTXT = true
+
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
   section = [ "HTML", "RSS" ]
@@ -79,3 +81,6 @@ summaryLength = 500
 
 [services.rss]
   limit = 30
+
+[permalinks]
+  post = "/:sections/:slug/"
