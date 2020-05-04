@@ -27,14 +27,11 @@ enableGitInfo = true
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
-# Set `true` for Chinese/Japanese/Korean languages.
-hasCJKLanguage = false
+hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
-# Workaround for https://github.com/gohugoio/hugo/issues/5687
-removePathAccents = true
+removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
 
-# Number of items per page in paginated lists.
-paginate = 10
+paginate = 10  # Number of items per page in paginated lists.
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -54,20 +51,21 @@ enableRobotsTXT = true
   mediaType = "application/manifest+json"
   rel = "manifest"
 
-# Configure BlackFriday Markdown rendering.
-#   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
-[blackfriday]
-  # `true` opens external links in a new tab. See https://github.com/gohugoio/hugo/issues/2424
-  hrefTargetBlank = true
-	angledQuotes = false
-	latexDashes = true
-  extensions = ["backslashLineBreak"]
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
 
 [imaging]
   resampleFilter = "lanczos"
   quality = 90
-  # Anchor for cropping. Options include Smart and Center.
-  anchor = "smart"
+  anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
 
 # Taxonomies.
 [taxonomies]
@@ -84,3 +82,12 @@ enableRobotsTXT = true
 
 [permalinks]
   post = "/:sections/:slug/"
+# Configure BlackFriday Markdown rendering.
+#   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
+
+[blackfriday]
+  # `true` opens external links in a new tab. See https://github.com/gohugoio/hugo/issues/2424
+  hrefTargetBlank = true
+	angledQuotes = false
+	latexDashes = true
+  extensions = ["backslashLineBreak"]
