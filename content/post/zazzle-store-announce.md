@@ -5,6 +5,7 @@ title: "Zazzle Store Announcement"
 subtitle: ""
 summary: "ZMT Creative Online Store at Zazzle.com"
 authors: ["admin"]
+slug: "zazzle-store-announcement"
 tags: ["merchandise","store","purchase","donate"]
 categories: ["Info"]
 date: 2019-11-27T12:17:18-05:00

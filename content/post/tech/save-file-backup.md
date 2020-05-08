@@ -5,6 +5,7 @@ title: "Quick File Snapshots (Save File Backup Script)"
 subtitle: ""
 summary: "A Powershell script for saving backup snapshots of individual files into a subdirectory."
 authors: ["djsweeney"]
+slug: "quick-file-snapshots-save-file-backup-script"
 tags: ["backup","snapshot","workflow","development","powershell","scripts"]
 categories: ["Technology"]
 date: 2020-02-27T12:44:36-05:00

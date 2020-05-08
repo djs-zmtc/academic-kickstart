@@ -5,6 +5,7 @@ title: "New Image Gallery"
 subtitle: ""
 summary: "New image gallery now online."
 authors: ["admin"]
+slug: "new-image-gallery"
 categories: ["Image Gallery"]
 tags: ["images", "gallery"]
 date: 2019-10-23T17:15:00-04:00

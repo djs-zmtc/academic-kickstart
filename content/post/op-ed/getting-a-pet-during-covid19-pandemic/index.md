@@ -5,10 +5,13 @@ title: "Getting a Pet During the COVID-19 Pandemic"
 subtitle: "The long-term consequences of pet adoption during a crisis"
 summary: "A surge in pet adoptions during the COVID-19 pandemic lockdown is creating a potential nightmare for pet rescue services in the coming months."
 authors: [djsweeney]
+slug: "getting-a-pet-during-covid19-pandemic"
 tags: ["Pets","Dogs","Cats","Pandemic","COVID-19","Opinion"]
 categories: ["Opinion"]
 date: 2020-05-01T10:57:09-04:00
 lastmod: 2020-05-01T10:57:09-04:00
+aliases:
+  - /post/op-ed/getting-a-pet-during-the-covid-19-pandemic/
 featured: false
 draft: false
 

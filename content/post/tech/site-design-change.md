@@ -4,6 +4,7 @@
 title: "Site Design Change"
 subtitle: ""
 summary: "Announcement of changes to the site design."
+slug: "site-design-change"
 authors: ["djsweeney"]
 categories: ["Technology"]
 tags: ["static web", "development","hugo"]

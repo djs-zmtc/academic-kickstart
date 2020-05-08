@@ -1,6 +1,7 @@
 ---
 title: "Switching Hyper-V On and Off Using Boot Options"
 summary: "A method to switch Hyper-V Services on and off by setting up multiple boot options and a script to select them, allowing other hypervisors (e.g. Virtualbox) to run with a simple reboot."
+slug: "switching-hyper-v-on-and-off-using-boot-options"
 type: "post"
 date: 2019-09-26T09:32:15-04:00
 lastmod: 2019-10-01T09:32:15-04:00

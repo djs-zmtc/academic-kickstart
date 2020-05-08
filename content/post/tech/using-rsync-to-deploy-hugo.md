@@ -4,6 +4,7 @@ date: 2019-10-01T15:59:47-04:00
 lastmod: 2019-10-02T18:09:47-04:00
 summary: "A supplement to the information provided on the Hugo site for deploying your site using rsync."
 authors: ["djsweeney"]
+slug: "using-rsync-to-deploy-hugo"
 type: "post"
 aliases: 
     - /2019/09/using-rsync-to-deploy-hugo/

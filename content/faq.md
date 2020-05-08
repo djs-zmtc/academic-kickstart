@@ -2,6 +2,7 @@
 title: "Frequently Asked Questions"
 #  linktitle: "FAQ"
 summary:
+slug: "faq"
 date: 2019-10-01T01:15:12-04:00
 lastmod: 2019-10-01T01:15:12-04:00
 draft: false  # Is this a draft? true/false
