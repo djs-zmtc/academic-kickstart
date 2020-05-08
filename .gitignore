@@ -1,6 +1,7 @@
 public/
 .idea/
 resources/_gen/
+resources/_localhost/
 .vscode/
 themes/academic/
-
+localhost/
