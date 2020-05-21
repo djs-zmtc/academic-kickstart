@@ -6,3 +6,13 @@
   translation: "Información"
 - id: tip
   translation: "Consejo"
+- id: disclaimer
+  translation: "Negante"
+- id: caution
+  translation: "Precaución"
+- id: update
+  translation: "Actualizar"
+- id: important
+  translation: "Importante"
+- id: remember
+  translation: "Recordar"
