@@ -1,5 +1,7 @@
 # hugo-notice
 
+> **Customized Version:** This is a customized version of `hugo-notice` for the ZMT Creative website
+
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/budparr/awesome-hugo)
 
 ## About
