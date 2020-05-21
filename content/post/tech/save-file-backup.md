@@ -43,7 +43,7 @@ When working on projects I'm often making revisions to documents that might requ
 
 **I primarily use this backup script for non-text files and projects that aren't being tracked with `git`.**  For binary files (like Photoshop, Word, InDesign, etc) `git` is too cumbersome and not well-suited to quickly saving and restoring versions (at least compared to a quick copy/paste from the `_BAK` folder).
 
-{{< notice warning >}}
+{{< notice disclaimer >}}
 I have been using the scripts below for several years, working on various MS&nbsp;Office and Adobe files and projects. The scripts have worked very well for my workflow. All they do is copy the selected file into a new folder -- they make **no** changes to the original file!
 
 However, your mileage may vary. I make no warranty or guarantee of any kind regarding the safety, usefulness and/or usability of these scripts in your environment. You use them **as-is** and **at your own risk.**
