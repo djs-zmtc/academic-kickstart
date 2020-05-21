@@ -20,7 +20,7 @@ copyright = "&copy; {year} ZMT Creative LLC"
 ############################
 
 # Name of Academic theme folder in `themes/`.
-theme = ["academic-zmtc","academic"]
+theme = ["hugo-notice","academic-zmtc","academic"]
 
 # Get last modified date for content from Git?
 enableGitInfo = true
