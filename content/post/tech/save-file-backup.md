@@ -43,11 +43,11 @@ When working on projects I'm often making revisions to documents that might requ
 
 **I primarily use this backup script for non-text files and projects that aren't being tracked with `git`.**  For binary files (like Photoshop, Word, InDesign, etc) `git` is too cumbersome and not well-suited to quickly saving and restoring versions (at least compared to a quick copy/paste from the `_BAK` folder).
 
-> **Warning/Disclaimer**
-> 
-> I have been using the scripts below for several years, working on various MS Office and Adobe files and projects. The scripts have worked very well for my workflow. All they do is copy the selected file into a new folder -- they make **no** changes to the original file!
-> 
-> However, your mileage may vary. I make no warranty or guarantee of any kind regarding the safety, usefulness and/or usability of these scripts in your environment. You use them **as-is** and **at your own risk.**
+{{< notice warning >}}
+I have been using the scripts below for several years, working on various MS&nbsp;Office and Adobe files and projects. The scripts have worked very well for my workflow. All they do is copy the selected file into a new folder -- they make **no** changes to the original file!
+
+However, your mileage may vary. I make no warranty or guarantee of any kind regarding the safety, usefulness and/or usability of these scripts in your environment. You use them **as-is** and **at your own risk.**
+{{< /notice >}}
 
 ## Download an Installer
 
@@ -55,7 +55,9 @@ You can download an installer that will install the script files and set up the 
 
 **Download:**  [ZMTC-SaveFileBackup_Installer](/downloads/ZMTC-SaveFileBackup-20.02.1_Installer.exe)
 
-> **NOTE:** The installer is **not** signed, so Windows might warn you that this is an untrusted file or something similar. The installer was created using Inno Setup and should be safe to run.
+{{< notice note >}}
+The installer is **not** signed, so Windows might warn you that this is an untrusted file or something similar. The installer was created using Inno Setup and should be safe to run.
+{{< /notice >}}
 
 The remaining sections below list the scripts and the instructions for manually setting up the `Send to` context menu.
 
@@ -248,9 +250,13 @@ Now that you have created the two scripts, you will need to create a shortcut fo
 
 Create a shortcut for the&nbsp;`Save-File-Backup.cmd` wrapper script. In Windows File Explorer, locate the folder with the scripts. Right-click on the&nbsp;`Save-File-Backup.cmd` file and select&nbsp;`Create shortcut` from the menu. This will create a new file, likely named&nbsp;`Save-File-Backup.cmd - Shortcut` (or something similar). Rename this shortcut file to&nbsp;`_Save File Backup` (no extension and with an underscore as the first character).
 
-> **NOTE 1:** The underscore at the beginning of the filename is optional, but will sort the file to the top of any context menu or other file listing. 
+{{< notice note >}}
+The underscore at the beginning of the filename is optional, but will sort the file to the top of any context menu or other file listing. 
+{{< /notice >}}
 
-> **NOTE 2:** The shortcut can be named anything you want -- it just points to the `Save-File-Backup.cmd` wrapper script. However, if you rename the `Powershell` script or the wrapper script at a later date, you will need to recreate this shortcut.
+{{< notice info >}}
+The shortcut can be named anything you want -- it just points to the `Save-File-Backup.cmd` wrapper script. However, if you rename the `Powershell` script or the wrapper script at a later date, you will need to recreate this shortcut.
+{{< /notice >}}
 
 ### Copy the Shortcut to your "Send to" Folder
 
